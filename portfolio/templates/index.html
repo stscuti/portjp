@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static '/css/fontello.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/estilo.css' %}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f35898e46.js" crossorigin="anonymous"></script>
+
+	<title >Portfolio - Sitio Web | Desarrollador Web - Juan Bentos - Django-Python</title>
+</head>
+<body>
+	{% block header %}<main>
+		<a href="#" class="logotipo" id="logotipo">
+			<div class="texto-animado" id="logo">PORTFOLIO Juan Pablo Bentos</div>
+			<p class="subtitulo">Analista IT - Desarrollador Web</p>			
+		</a>
+	</main>{% endblock header %}
+	
+	{% block body %}
+	<div class="contenedor">
+	<div class="container">
+		
+
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<h2>Sistema Web de Evaluacion de Empleados</h2>
+					<p>Sistema web, basado en python realizado con el framwork Django, de evaluacion de empleados.<br>Es un sistema en el cual se asigna una sucursal, se crea un empleado para la sucursal creada y se le asigna un prmedio automaticamente al ingresar valores para las difrenetes aptitudes que el empleado presenta, luego de guardadas en la base de datos se puede ver las evaluaciones realizadas con su respectivo resultado en pantalla<br>Tambien cuenta con un sistema de ingreso(altas y bajas) de tarjetas de debito a entrgar en cada sucursal, donde se agregan cuando llegan y se eliminan cuando se entregan, este sistema cuenta con una herramienta de busqueda por nombre para facilitar la operativa<br> <a href="http://juanbentos2019.pythonanywhere.com/accounts/login/?next=/" class="proyectojp" id="proyectojp"  target="_blank"><strong>Ingresar al Sistema</strong></a></p>
+				</div>
+			</div>
+			<div class="face face2 face2">
+				<h2>Proyectos</h2>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<a href='{% url "crearcontacto" %}'><h2>Formulario de contacto</h2></a>
+					<p><a href="https://api.whatsapp.com/send?phone=0598-95104391" class="btn-wsp" target="_blank">WhatsApp
+								<i class="icon-whatsapp"></i>
+							</a>
+				    </p>
+				</div>
+			</div>
+			<div class="face face2 face3">
+				<h2>Deja tu Contacto</h2>
+				
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<h2>Analista en TI - CUTI</h2>
+					
+					<p><ul class="lista">
+						  <a href="https://courses.edx.org/certificates/ac86f847c34c4b41b44eeb5b7245c7e0" target="_blank"><li>Gestion de Proyectos</li>
+						  </a>
+						  <a href="https://www.udemy.com/certificate/UC-06F63LCD/" target="_blank">
+						  <li>SQL</li>
+						  </a>
+						  <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-Y7V2N827.pdf" target="_blank">
+						  <li>Python</li>
+						  </a>
+						  <a href="https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Introduction">
+						  <li>Django Framework</li>
+						  </a>
+						  <a href="https://courses.edx.org/certificates/a7ccd78d2f134e7b9979b7965994f5a6" target="_blank">
+						  <li>Design Thinking</li>
+						  </a>
+						  <a href="https://courses.edx.org/certificates/eab352f2516a46d987db980ec4a365d0" target="_blank">
+						  <li>Emprendimiento Tecnologico</li>
+						  </a>
+						  <a href="https://courses.edx.org/certificates/f144e59c7018435f86f463320edd47c0" target="_blank">
+						  <li>Diagramas UML</li>
+						  </a>
+						  <a href="https://courses.edx.org/certificates/a889295f3ee34b238d41e5504dcef823" target="_blank">
+						  <li>Android y Java</li>
+						  </a>
+						  <a href="https://courses.edx.org/certificates/6e228450443f45119dbc8ae40291dd33" target="_blank">
+						  <li>Html5-CSS3-Javasript</li>
+						  </a>
+						  <a href="https://courses.edx.org/certificates/0c09d455e0cc4b718e53c9b63dc2675f" target="_blank">
+						  	<li>Bussiness Intelligence</li>
+						  </a>
+						  <a href="#">
+						  <li>Git</li>
+						  </a>
+						  <a href="https://certificados.miriadax.net/1448bc60-4ad3-4543-808b-408d5ea2be3b" target="_blank">
+						  <li>Diseño web con Html5 y CSS</li>
+						  <a href="https://drive.google.com/file/d/1GgNGEt4iRf7aW5DcF57rKXcuSyllT4Nr/view?usp=sharing" target="_blank">
+						  <li><strong>Programador</strong></li>
+						  </a>
+						  <a href="https://drive.google.com/file/d/1-4Q1BXD76uU7tRXKV5np6WiukpapoAR6/view?usp=sharing" target="_blank"> 
+						  	<li><strong>Analista en TI</strong></li>
+						  </a>
+					   </ul>
+				    </p>
+				</div>
+			</div>
+			<div class="face face2 face4">
+				<h2>Cursos y habilidades</h2>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<h2>Seguidme...</h2>
+					<div class="social-networks">
+						
+							
+							<a href="https://www.facebook.com/juanbentos/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://www.linkedin.com/in/juan-bentos-05b99816b/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							<!--<a href="contacto/avisocontacto.html" class="twitter"><i class="fab fa-twitter"></i></a>-->
+						
+					</div>
+				</div>
+			</div>
+			<div class="face face2 face5">
+				<h2>Redes Sociales</h2>
+			</div>
+		</div>
+	</div>
+    </div>
+    {% endblock body %}
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    {% if messages %}
+
+    {% for m in messages %}
+        <script>
+        	Swal.fire({
+        		"title":"OK",
+        		"text": "{{m}}",
+        		"icon": "success"
+        	})
+        </script>
+    {% endfor %}
+    {% endif %}
+
+    <script src="{% static '/js/app.js' %}"></script>
+    <script src="{% static '/js/rainyday.js' %}"></script>
+    
+</body>
+</html>

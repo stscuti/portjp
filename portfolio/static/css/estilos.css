@@ -1,0 +1,124 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	display: flex;
+	flex-wrap: nowrap;
+
+
+}
+
+h1{
+	color:#354485;
+	margin: 50%;
+	padding: 20px;
+
+}
+*{
+	box-sizing: border-box;
+}
+.flex-container{
+	display: flex;
+	
+	height: 25em;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	padding: 10px;
+	border: .1px box black;
+}
+.flex-hijo1{
+	background-image: url('habilidades.jpg');
+	width: 350px;
+	height: 350px;
+	margin: 25px;
+	text-align: center;
+	justify-content: center;
+	line-height: 75px;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+@supports(object-fit: cover){
+	.flex-hijo1{
+	  height: 100%;
+      object-fit: cover;
+      object-position: center center;
+	}
+}
+.flex-hijo2{
+	background-image: url('proyectos.png');
+	width: 500px;
+	height: 500px;
+	margin: 25px;
+	text-align: center;
+	justify-content: center;
+	line-height: 75px;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+@supports(object-fit: cover){
+	.flex-hijo2{
+	  height: 100%;
+      object-fit: cover;
+      object-position: center center;
+	}
+}
+.flex-hijo3{
+	background-image: url('contacto.jpg');
+	width: 500px;
+	height: 500px;
+	margin: 25px;
+	text-align: center;
+	justify-content: center;
+	line-height: 75px;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+@supports(object-fit: cover){
+	.flex-hijo3{
+	  height: 100%;
+      object-fit: cover;
+      object-position: center center;
+	}
+}
+.flex-hijo4{
+	background-color: aqua;
+	width: 500px;
+	height: 500px;
+	margin: 25px;
+	text-align: center;
+	justify-content: center;
+	line-height: 75px;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+@supports(object-fit: cover){
+	.flex-hijo4{
+	  height: 100%;
+      object-fit: cover;
+      object-position: center center;
+	}
+}
+.flex-hijo5{
+	background-image: url('redes_sociales.jpg');
+	width: 500px;
+	height: 500px;
+	margin: 25px;
+	text-align: center;
+	justify-content: center;
+	line-height: 75px;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+@supports(object-fit: cover){
+	.flex-hijo5{
+	  height: 100%;
+      object-fit: cover;
+      object-position: center center;
+	}
+}

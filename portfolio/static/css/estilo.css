@@ -1,0 +1,369 @@
+:root
+{
+	--logotipo:#1a1a1a;
+	--profesion:#f2f2f2;
+	--primario:#2e5fff;
+}
+
+body
+{
+	margin:0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(-70deg, #008bff, rgba(0,70,80,0.5));
+	/*background-image: linear-gradient(85deg, #0097ff 0, #0091ff 3.33%, #008bff 6.67%, #0084ff 10%, #627cff 13.33%, #8a73ff 16.67%, #a769f4 20%, #bf5ee6 23.33%, #d253d7 26.67%, #e247c6 30%, #ee3cb4 33.33%, #f733a2 36.67%, #fd2d8f 40%, #ff2c7c 43.33%, #ff306a 46.67%, #ff3858 50%, #fb4246 53.33%, #f44d34 56.67%, #ec5721 60%, #e26204 63.33%, #d66b00 66.67%, #c97400 70%, #bb7c00 73.33%, #ac8300 76.67%, #9c8900 80%, #8a8f00 83.33%, #789300 86.67%, #639700 90%, #4b9b00 93.33%, #279e0a 96.67%, #00a029 100%);*/
+	/*background-image: url('nubes.jpg');
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;*/
+}
+
+h1
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1em + 1vw);
+	line-height: 1em;
+	padding: 1em;
+	margin: 1em;
+}
+.contenedor
+{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.container
+{
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin:0;
+	padding: 0;
+	border-radius: 15px;
+}
+.container .card
+{
+	position: relative;
+	width: 400px;
+	height: 580px;
+	margin: 10px;
+	background: linear-gradient(25deg, #fff, rgba(10,50,40,0.1));;
+	box-shadow: 0 15px 60px rgba(0,0,0,0.5);
+	border-radius: 20px;
+	display: flex;
+
+}
+.container .card .face
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+
+}
+.container .card .face.face1
+{
+	box-sizing: border-box;
+	padding: 20px;
+
+
+}
+.container .card .face.face1 h2
+{
+	font-size: calc(1em + 1vw);
+    line-height: 1em;
+    padding: 1em;
+    margin: 1em;
+	color:#fff;
+	font-size: 1.5em;
+
+
+}
+.container .card .face.face1 h2:hover
+{
+	color: #111;
+}
+#proyectojp
+{
+	color:#111;
+	margin: 30%;
+}
+
+.container .card .face.face2.face2
+{
+	background-image: url('proyectos.jpg');
+	transition: 3s;
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+
+}
+
+
+.container .card:hover .face.face2
+{
+	height: 60px;
+}
+.container .card .face.face2:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: rgba(255,255,255,.1);
+}
+.container .card .face.face2 h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	color: #fff;
+	transition: 1.5s;
+
+
+}
+.container .card:hover .face.face2 h2
+{
+	font-size: 2em;
+}
+.container .card .face.face2.face3
+{
+	background-image: url('contacto.jpg');
+	transition: 3s;
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+
+}
+
+.container .card .face.face2.face4
+{
+	background-image: url('habilidades.jpg');
+	transition: 3s;
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+
+}
+
+.container .card .face.face2.face5
+{
+	background-image: url('redes_sociales.jpg');
+	transition: 3s;
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+
+}
+.container .card .face.face1  a 
+{
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+
+}
+.btn-wsp
+{
+	display: flex;
+	margin-top: 20px;
+	width: 190px;
+	height: 65px;
+	line-height: 55px;
+	bottom:0;
+	right: 150px;
+	background: #0df053;
+	color: #fff;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 35px;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+	z-index: 100px;
+	
+
+
+}
+.btn-wsp .icon-whatsapp
+{
+	align-items: center;
+	justify-content: center;
+	margin:10px auto;
+
+}
+.btn-wsp:hover
+{
+	text-decoration: none;
+	color: #0df053;
+	background: #111;
+}
+.logotipo
+{
+	padding: 10px;
+	margin: 0;
+	color: var(--logotipo);
+	text-decoration: none;
+
+
+}
+.logotipo .subtitulo
+{
+	text-align: center;
+	color:var(--profesion);
+	background: var(--logotipo);
+	padding: 12px 20px;
+	transition: 5s ease all;
+	font-size: 36px;
+	font-family: 'Monoton', cursive;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	
+}
+.logotipo:hover .subtitulo
+{
+	background: var(--primario);
+}
+.texto-animado
+{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+.texto-animado > div
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition:.3s ease all;
+}
+.texto-animado > div.animacion
+{
+	transform: translateY(-100px);
+}
+.texto-animado > div span
+{
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 50px;
+}
+.texto-animado .segunda-linea
+{
+	position: absolute;
+	top: 100px;
+}
+body > div > div > div:nth-child(1) > div.face.face1 > div > h2{
+	text-align: center;
+}
+body > div > div > div:nth-child(1) > div.face.face1 > div > p{
+	justify-content: center;
+	align-items: center;
+	font-size: 0.85em;
+}
+@media screen and (max-width: 600px){
+	.texto-animado > div span{
+		font-size: 25px;
+		line-height: 25px;
+	}
+	.texto-animado .segunda-linea{
+		top: 50px;
+
+	}
+	.texto-animado > div.animacion{
+		transform: translateY(-50px);
+	}
+	.logotipo .subtitulo{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 400px){
+	main{
+		max-width: 100%;
+	}
+	
+	.texto-animado > div span{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.container .card .face.face1{
+		padding: 0;
+	}
+	body > div > div > div:nth-child(1) > div.face.face1 > div{
+		margin: 4em;
+	}
+	body > div > div > div:nth-child(1) > div.face.face1 > div > p{
+		font-size: 0.7em;
+		margin: 10px;
+
+		
+	}
+	body > div > div > div:nth-child(1) > div.face.face1 > div > h2{
+		font-size: .65em;
+		text-align: center;
+
+	}
+	body > div > div > div:nth-child(3) > div.face.face1 > div > h2{
+		font-size: 1em;
+		text-align: center;
+	}
+	div.content{
+		margin: 0;
+	}
+
+
+}
+.social-networks
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.social-networks a
+{
+	display: inline-flex;
+	height: 40px;
+	width: 40px;
+	background-color: #000000;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 50%;
+	transition: transform 0.4s;
+}
+.social-networks a:hover
+{
+	transform: scale(2.5);
+}
+.social-networks a.facebook
+{
+	background-color: #3b5998;
+}
+.social-networks a.linkedin
+{
+	background-color: #0e76a8;
+}
+.social-networks a.twitter
+{
+	background-color: #00acee;
+}
+.lista li
+{
+	color: #000;
+}
